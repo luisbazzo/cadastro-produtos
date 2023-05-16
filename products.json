@@ -13,6 +13,13 @@
       "color": "Black",
       "amount": 15,
       "productor": "Adidas"
+    },
+    {
+      "id": 3,
+      "name": "Tênis",
+      "color": "Branca",
+      "amount": "17",
+      "productor": "Nike"
     }
   ]
 }

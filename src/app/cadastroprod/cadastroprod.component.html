@@ -6,42 +6,42 @@
   </div>
   <div class="row">
     <div class="col">
-      <form>
+      <form [formGroup]="formGroupProduct">
         <div class="mb-3">
           <label for="name" class="form-label">Nome do Produto: </label>
-          <input type="text" class="form-control" id="name" aria-describedby="Nome">
+          <input type="text" formControlName="name" class="form-control" id="name" aria-describedby="Nome">
         </div>
       </form>
     </div>
     <div class="col">
-      <form>
+      <form [formGroup]="formGroupProduct">
         <div class="mb-3">
           <label for="color" class="form-label">Cor do Produto: </label>
-          <input type="text" class="form-control" id="color" aria-describedby="Cor">
+          <input type="text" formControlName="color" class="form-control" id="color" aria-describedby="Cor">
         </div>
       </form>
     </div>
   </div>
   <div class="row mb-3">
     <div class="col">
-      <form>
+      <form [formGroup]="formGroupProduct">
         <div class="mb-3">
           <label for="amount" class="form-label">Quantidade: </label>
-          <input type="text" class="form-control" id="amount" aria-describedby="Quantidade">
+          <input type="text" formControlName="amount" class="form-control" id="amount" aria-describedby="Quantidade">
         </div>
       </form>
     </div>
     <div class="col">
-      <form>
+      <form [formGroup]="formGroupProduct">
         <div class="mb-3">
           <label for="productor" class="form-label">Fabricante do Produto: </label>
-          <input type="text" class="form-control" id="productor" aria-describedby="Fabricante">
+          <input type="text" formControlName="productor" class="form-control" id="productor" aria-describedby="Fabricante">
         </div>
       </form>
     </div>
   </div>
   <div class="mb-5 text-center">
-    <button class="btn btn-primary fs-5">Cadastrar</button>
+    <button class="btn btn-primary fs-5" (click)="save()">Cadastrar</button>
   </div>
 
   <div class="row text-center">
@@ -56,7 +56,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngfor="let product of Products">
+        <tr *ngFor="let product of product">
           <th scope="row">{{product.id}}</th>
           <td>{{product.name}}</td>
           <td>{{product.color}}</td>

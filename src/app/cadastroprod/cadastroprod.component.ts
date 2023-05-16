@@ -37,4 +37,15 @@ export class CadastroprodComponent implements OnInit{
       }
     );
   }
+
+  save(){
+    this.ProductsService.save(this.formGroupProduct.value).subscribe(
+      {
+        next : data => {
+          this.product.push(data);
+          this.formGroupProduct.reset();
+        }
+      }
+    );
+  }
 }
