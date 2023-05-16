@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Calça",
+      "color": "Black",
+      "amount": 20,
+      "productor": "Adidas"
+    },
+    {
+      "id": 2,
+      "name": "Blusa",
+      "color": "Black",
+      "amount": 15,
+      "productor": "Adidas"
+    }
+  ]
+}
